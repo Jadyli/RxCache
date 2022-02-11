@@ -3,12 +3,12 @@ apply plugin: 'maven'
 group = 'com.github.VictorAlbertos'
 version='1.8.0-2.x'
 
-sourceCompatibility = 1.7
-targetCompatibility = 1.7
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 dependencies {
     //compile files("${System.properties['java.home']}/../lib/tools.jar")
-    compile files(org.gradle.internal.jvm.Jvm.current().getToolsJar())
+//    compile files(org.gradle.internal.jvm.Jvm.current().getToolsJar())
 
     compile project(':core')
     compile project(':runtime')
