@@ -3,7 +3,8 @@ apply plugin: 'com.android.application'
 buildscript {
   repositories {
     mavenCentral()
-    jcenter()
+    maven { url 'https://jitpack.io' }
+    maven { url 'http://nexus.bilibili.co/content/groups/carbon/' }
   }
 
   dependencies {
@@ -12,13 +13,13 @@ buildscript {
 }
 
 android {
-  compileSdkVersion 23
-  buildToolsVersion '26.0.2'
+  compileSdkVersion 28
+  buildToolsVersion '30.0.2'
 
   defaultConfig {
     applicationId "victoralbertos.io.android"
-    minSdkVersion 16
-    targetSdkVersion 23
+    minSdkVersion 17
+    targetSdkVersion 26
     versionCode 1
     versionName "1.0"
   }
@@ -41,8 +42,8 @@ dependencies {
 
   testCompile 'junit:junit:4.12'
 
-  annotationProcessor "com.google.dagger:dagger-compiler:2.14.1"
-  compile "com.google.dagger:dagger:2.14.1"
+  annotationProcessor "com.google.dagger:dagger-compiler:2.38"
+  compile "com.google.dagger:dagger:2.38"
   provided "org.glassfish:javax.annotation:10.0-b28"
 }
 

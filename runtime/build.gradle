@@ -1,10 +1,10 @@
 apply plugin: 'java'
 apply plugin: 'maven'
 group = 'com.github.VictorAlbertos'
-version='1.8.0-2.x'
+version='1.8.4-2.x'
 
-sourceCompatibility = 1.7
-targetCompatibility = 1.7
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 task sourcesJar(type: Jar, dependsOn: classes) {
     classifier = 'sources'
@@ -28,5 +28,5 @@ dependencies {
     testCompile 'com.github.VictorAlbertos.Jolyglot:gson:0.0.4'
     testCompile 'com.github.VictorAlbertos.Jolyglot:jackson:0.0.4'
     testCompile 'com.github.VictorAlbertos.Jolyglot:moshi:0.0.4'
-    testCompile 'junit:junit:4.12'
+    testCompile 'junit:junit:4.13.2'
 }
